@@ -1,0 +1,23 @@
+-- STUDENT -- This is where you write your analysis for part 1 of the final exam.
+----------------------------------------------------------------------------------
+Analysis Question 1 - CRTP
+By using CRTP, we can permit a subclass to provide basic type information to its base class. As the base class can have type information of it wants to refer to the subclass, we can realized the bi-directional communication between them. 
+
+Analysis Question 2 - Inversion of Control
+As mentioned in class, with IOC, the application provides a framework for controlling execution. In IOC you provide code that is called by the IOC framework when it decides it needs your code to respond. In assignment 5, Game already gives us a IOC framework and all me need to do is to add code concerning with Player that when Game call the player to respond and decide, each player can decide.
+
+Analysis Question 3 - Object Relationships
+For Composition relationship, we have this in Player.hpp where our Player Object has the PieceColor Object as its property. The relationship between Player and PieceColor is composition relationship.
+For Inheritance relationship, we have this in Game.cpp where RealGame class inherit   Game, which the relationship between them is inheritance.
+For CRTP relationship, we can find this in Game.cpp between Game and RealGame where RealGame provides type information to its base class.
+For Argument Passing relationship, we can find example in Game.cpp where Game uses Player as the argument when we access the run method in Game.
+For Friend relationship, we always use it when overwrite output method by declare the friend relationship between the class and the output function. Like in assignment 2, we declare the relationship between output function with class Calendar.
+For Interface relationship, we can find example in assignment 4 where we use JSONListener as an interface and defined and implement the methods in it in Model Class.
+
+Analysis Question 4 - RealGame
+We design RealGame because we want Game to be defined as the general Game class for this checker, and for RealGame class, we want to have specific data for a specific round of Game. As we can see from the property of RealGame, we have a lot of property to record the current state for the game currently. However in Game, we only need to define several general action the game will need. 
+
+Analysis Question 5 (EXTRA CREDIT) - Code Review
+For code in Game.cpp, the Game class is tried to specify what a general game can do and make the state of game communicate with player. Thus, we need the player to move or jump pieces, set traps and report moves. Also,we need get the state of checker at each tile and for each available piece, so that we can make the player judge the current state to make a better move.
+The RealGame Class is more like a class not opened to user. We make changes of the board and judge if the user make the valid move once the player has decided where to move to. Thus we have a lot of function like isValidMove, pieceHasJump to judge if the player make a valid move and if the Game can be continued.We also some take action function like removePiece, jumpedOpponent to do further movement action. Also, we have some visualize function to show the current game board and state to the user to record the game. 
+
