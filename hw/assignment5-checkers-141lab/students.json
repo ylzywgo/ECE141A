@@ -1,0 +1,21 @@
+{
+  "course": "ECE141a",
+  "term"  : "WI20",
+  "assignment"         : 5,
+  "due_date"           : "Mar. 15, 2020, 11:15p",
+  "total_effort_hours" : 20,
+  "students": [
+    {
+      "name " : "Yawen Zhao",
+      "pid"   : "A53280596",
+      "email" : "yaz005@ucsd.edu",
+      "os"    : "mac"
+    },
+    {
+      "name " : "Shihua Sun",
+      "pid"   : "A53286030",
+      "email" : "ssun@eng.ucsd.edu",
+      "os"    : "windows"
+    }
+  ]
+}
