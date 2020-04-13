@@ -1,0 +1,17 @@
+Inheritance Specifier: public
+Methods Accessible in Child Class: doPublicMethod, doProtectedMethod
+Fields Accessible in Child Class: publicField, protectedField
+Methods Accessible in GrandChild Class: doPublicMethod, doProtectedMethod
+Fields Accessible in GrandChild Class: publicField, protectedField
+
+Inheritance Specifier: protected
+Methods Accessible in Child Class: doPublicMethod, doProtectedMethod
+Fields Accessible in Child Class: publicField, protectedField
+Methods Accessible in GrandChild Class: doPublicMethod, doProtectedMethod
+Fields Accessible in GrandChild Class: publicField, protectedField
+
+Inheritance Specifier: private
+Methods Accessible in Child Class: doPublicMethod, doProtectedMethod
+Fields Accessible in Child Class: publicField, protectedField
+Methods Accessible in GrandChild Class: None
+Fields Accessible in GrandChild Class: None
